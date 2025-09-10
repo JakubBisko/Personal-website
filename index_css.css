@@ -1,0 +1,543 @@
+:root {
+  --bs-primary: #ff6600;   /* change of prim color*/
+  --bs-primary-rgb: 255, 102, 0;
+  /*--bs-primary-rgb: 245, 222, 179;*/
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  min-height: 130vh;
+  background: #07203d; /* základní barva */ /* color change */
+  position: relative;
+}
+
+html, body {
+  overflow-x: hidden; /* fix body width */
+  width: 100%;
+  max-width: 100%;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 2000px;
+  background: 
+    linear-gradient(
+      to bottom, 
+      rgba(231, 210, 178, 0) 1000px,
+      #082427  1300px, 
+      #082427  100%
+      
+    ),
+    url('ahoj.jpg') no-repeat center center;
+  background-size: cover;
+  z-index: -2; /* hlubší */
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 2000px;
+background: rgba(0,0,255,0.1); /* zatmavení */
+  z-index: -1;
+}
+
+
+
+
+
+
+/*pre-style borders*/
+.border-style1 {
+    border-radius: 100px 15px 100px 10px;
+    text-align: center;
+    color: #f5deb3;
+  
+
+}
+
+.line {
+    height: 30px;
+    background: rgb(201, 141, 13);  /* color change */
+    
+}
+
+
+/*header and intro*/
+
+.arrow {
+  text-align: center;
+  width: 100%;
+}
+.arrowImage {
+  width: 450px;
+  height: 300px;
+}
+
+.Name { color: white;
+        text-align: center;
+        font-family: "Satisfy", cursive;
+        font-weight: 400;
+        font-size: 98px;
+        font-style: normal;
+        
+        
+ }
+
+
+
+ /*bubble*/
+/* Hlavní kruhová bublina */
+.circular-bubble {
+  width: 350px;
+  height: 350px; /* pevná výška, aby byl kruh perfektní */
+  border: 5px solid rgb(243, 140, 6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  border-radius: 50%;
+  text-align: center;
+  font-size: auto;
+  font-weight: 900;
+  font-family: Arial, sans-serif;
+  position: relative;
+  color: rgb(255, 255, 255);
+  background: rgb(201, 141, 13);
+  flex-shrink: 0;
+}
+
+.circle1, .circle2 {
+  position: absolute;
+  border-radius: 50%;
+  background: #fff; /* nebo jiná barva */
+}
+
+.circle1 {
+  right: -15px;
+  bottom: 15px;
+  width: 60px;
+  height: 60px;
+  
+}
+
+.circle2 {
+  right: -60px;
+  bottom: 5px;
+  width: 40px;
+  height: 40px;
+  background: #798584;}
+
+.profile-photo {
+  width: 320px;
+  
+  
+  height: auto;
+  flex-shrink: 0; /* obrázek se zmenší, bublina zůstane */
+  margin-left: -30%;
+}
+
+
+
+.colorwrapper {
+  background-color: rgb(66, 85, 192);
+}
+
+.about-me-size {
+  
+  padding-top: 200px;
+  margin: 5%;
+  
+  
+}
+
+.about-me {
+    background: #f0d8a0;
+    background-image: url('https://marketplace.canva.com/EAGKt3VagL4/1/0/1600w/canva-gold-and-dark-blue-vintage-bordered-background-card-0vgxacQQKoE.jpg');
+    background-size: cover;        /* zaplní celý box */
+    background-position: center;   /* vždy střed obrázku */
+    background-repeat: no-repeat;  /* zabrání opakování */
+    
+    border: 2px solid #7a5638;
+    border-radius: 12px;
+    padding: 25px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    color: #271a13;
+    font-family: "Georgia", serif;
+    
+    
+    height: 400px;
+    color: #ffffff;
+    /*color: #ceaf00;*/
+    /* https://images.template.net/358010/Aesthetic-Intro-Background-edit-online-4.jpg
+    https://cdn.photoroom.com/v2/image-cache?path=gs://background-7ef44.appspot.com/backgrounds_v3/cute/47_-_cute.jpg
+    
+    
+    */
+}
+
+/* test*/
+
+
+
+
+/* Druhá sekce */
+.ed-ex {
+  background: #07203d;
+  color: black;
+  position: relative;
+  clip-path: polygon(0 40px, 100% 0, 100% 100%, 0 100%); /* 40px fixní */
+  margin-top: -5px;
+}
+
+
+
+
+
+.ed-ex-text {
+  padding-top: 25px;
+  background: #f0d8a0;
+  background-image: url('https://marketplace.canva.com/EAGKt3VagL4/1/0/1600w/canva-gold-and-dark-blue-vintage-bordered-background-card-0vgxacQQKoE.jpg');
+  background-size: cover;       /* vyplní celý box */
+  background-position: center;  /* vždy střed obrázku */
+  background-repeat: no-repeat; /* bez opakování */
+  
+  border: 2px solid #7a5638;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  color: #ffffff;
+  font-family: "Georgia", serif;
+  min-height: 300px;
+  max-height: 400px;
+  padding: 5%;
+  height: 400px;
+  padding-top: 70px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+
+
+.ed-ex-text-cover{
+  margin-top: 15%;
+  padding: 30px;
+  
+  
+  position: relative;
+
+}
+
+.ed-exNadpis {
+  color: #ff9900;
+  position: relative;
+  font-family: "Bebas Neue", sans-serif;
+  margin-top: 10%;
+  padding-top: 10%;
+  text-align: center;
+  font-size: 60px;
+  float: right;
+  
+  
+}
+
+.ed-ex-info {
+    padding-top: 35%;
+   position: relative;
+   
+opacity: 50%;
+color: rgb(66, 85, 192);
+font-family: "Satisfy", cursive;
+float: right;
+font-size: 50px;
+   
+}
+
+/* test*/
+
+
+
+.pozice-textu-about {
+  padding: 5%;
+  
+}
+
+
+
+
+
+.about-me-title {
+  font-family: "Bebas Neue", sans-serif;
+  margin-top: 80px;
+  text-align: center;
+  font-size: 60px;
+  color: #ff9900;
+  
+}
+
+
+.background-info {
+  font-family: "Satisfy", cursive;
+  float: right;
+  
+  z-index: 10;
+  color: rgb(66, 85, 192);
+  font-size: 50px;
+  opacity: 50%;
+  padding-left: 4%;
+  position: relative;
+  margin-top: 20%;
+  
+}
+
+.hero-lower-title{
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.hero {
+  background: #1e1e1e;
+  color: white;
+  
+  background-image: url('Gm6KVU.png');
+  background-size: cover;
+  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+  height: 900px;
+  
+}
+.pozice-textu-hero {
+  padding-top: 15%;
+  
+  
+}
+
+.NadpisHero {
+  
+  padding-top: 15%;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 60px;
+  
+}
+
+
+.footer {
+  margin-top: 100px;
+  height: auto;
+  min-height: 150px;
+  width: 100%;
+  background-color: #032353;
+  color: white;
+}
+
+
+.footer-text{
+   font-family: "Bebas Neue", sans-serif;
+  margin-top: 55px;
+  text-align: left;
+  font-size: 25px;
+}
+
+
+.footer-title{
+  font-family: "Bebas Neue", sans-serif;
+  margin-top: 60px;
+  font-size: 40px;
+}
+
+
+.float-item {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.float-item.show {
+  opacity: 1;
+  transform: translateY(0);
+   transition-delay: 0.3s;
+}
+
+
+
+.float-item2 {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.float-item2.show {
+  opacity: 1;
+  transform: translateY(0);
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1010px) { /* tablety */
+ 
+.about-me-title {
+  font-family: "Bebas Neue", sans-serif;
+  margin-top: 80px;
+  text-align: center;
+  font-size: 45px;
+  
+}
+
+
+.ed-exNadpis {
+  
+  position: relative;
+  font-family: "Bebas Neue", sans-serif;
+  margin-top: 10%;
+  text-align: center;
+  font-size: 45px;
+  
+  
+  
+  
+}
+
+.ed-ex-text-cover{
+  
+  padding: 30px;
+  
+  
+  position: relative;
+
+}
+
+.background-info {
+  font-family: "Satisfy", cursive;
+  float: right;
+  
+  z-index: 10;
+  color: rgb(66, 85, 192);
+  font-size: 40px;
+  opacity: 50%;
+  padding-left: 4%;
+  position: relative;
+  margin-top: 20%;
+  
+}
+
+.ed-ex-info {
+    padding-top: 40%;
+   position: relative;
+   
+opacity: 50%;
+color: rgb(66, 85, 192);
+font-family: "Satisfy", cursive;
+float: right;
+font-size: 40px;
+   
+}
+
+
+.circular-bubble {
+  width: 250px;
+  height: 250px; /* pevná výška, aby byl kruh perfektní */
+  border: 5px solid rgb(243, 140, 6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  border-radius: 50%;
+  text-align: center;
+  font-size: auto;
+  font-weight: 900;
+  font-family: Arial, sans-serif;
+  position: relative;
+  color: white;
+  background: rgb(201, 141, 13);
+  flex-shrink: 0;
+}
+
+.circle1, .circle2 {
+  position: absolute;
+  border-radius: 50%;
+  background: #fff; /* nebo jiná barva */
+}
+
+.circle1 {
+  right: -15px;
+  bottom: 15px;
+  width: 60px;
+  height: 60px;
+  
+}
+
+.circle2 {
+  right: -60px;
+  bottom: 5px;
+  width: 40px;
+  height: 40px;
+  background: #00bfb6;}
+
+.profile-photo {
+  width: 600px;
+  margin-left: -30%;
+  
+  height: auto;
+  
+}
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+@media (max-width: 767px) {
+  .ed-exNadpis {
+    order: -1; /* nadpis nahoru */
+    
+    margin-top: 20%;
+  }
+
+  .ed-ex-info {
+    order: 2; /* info dolů */
+    color: rgb(66, 85, 192);
+    text-align: right; /* aby to nevypadalo divně na mobilu */
+    padding-top: 20px;
+    padding-right: 40px;
+  }
+
+  .ed-ex-text-cover {
+    order: 1; /* text zůstane uprostřed */
+    
+  }
+}
